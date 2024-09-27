@@ -10,13 +10,23 @@ function padRow(rowNumber, rowCount) {
 
    rows.push(padRow(i, count))
 } */
-if (false) {
-   console.log("Condition is true");
-}
-else if (5 < 10) {
-   console.log("5 is less than 10");
-}
-let result = ""
+
+/* while (rows.length < count) {
+   rows.push(padRow(rows.length+1, count));
+} */
+
+/* for (let i = count; i > 0; i--) {
+   rows.push(padRow(i, count));
+} */
+const numbers = [1, 2, 3];
+console.log(numbers);
+const shifted = numbers.shift();
+console.log(shifted);
+
+const unshifted = numbers.unshift(5);
+console.log(unshifted);
+
+let result = "";
 
 for (const row of rows) {
    result = result + "\n" + row;
