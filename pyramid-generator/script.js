@@ -6,10 +6,10 @@ function padRow(rowNumber, rowCount) {
    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
 }
 
-/* for (let i = 1; i <= count; i++) {
+for (let i = 1; i <= count; i++) {
 
-   rows.push(padRow(i, count))
-} */
+   rows.unshift(padRow(i, count))
+}
 
 /* while (rows.length < count) {
    rows.push(padRow(rows.length+1, count));
@@ -18,13 +18,6 @@ function padRow(rowNumber, rowCount) {
 /* for (let i = count; i > 0; i--) {
    rows.push(padRow(i, count));
 } */
-const numbers = [1, 2, 3];
-console.log(numbers);
-const shifted = numbers.shift();
-console.log(shifted);
-
-const unshifted = numbers.unshift(5);
-console.log(unshifted);
 
 let result = "";
 
