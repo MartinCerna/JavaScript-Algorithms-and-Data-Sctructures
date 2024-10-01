@@ -4,7 +4,7 @@
          "type": "node",
          "name": "Run Current File",
          "request": "launch",
-         "program": "${workspaceFolder}\\pyramid-generator\\script.js"
+         "program": "${workspaceFolder}\\2_gradebookApp\\script.js"
       }
    ]
 }
